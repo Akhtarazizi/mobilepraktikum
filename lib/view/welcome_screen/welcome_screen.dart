@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobilepraktikum/view/welcome_screen/login_page.dart';
 import 'package:mobilepraktikum/view/welcome_screen/register_page.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -63,7 +64,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       child: ElevatedButton(
                         style: ButtonStyle(
                           shape:
-                          MaterialStateProperty.all<RoundedRectangleBorder>(
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
                             ),
@@ -74,7 +75,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             context,
                             MaterialPageRoute(
                               builder: (context) =>
-                                  RegistrationPage(), // Ganti LoginScreen() dengan sesuai dengan nama file login.dart Anda
+                                  LoginPage(), // Ganti LoginScreen() dengan sesuai dengan nama file login.dart Anda
                             ),
                           );
                         },
