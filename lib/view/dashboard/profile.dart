@@ -30,7 +30,7 @@ class _ProfileState extends State<Profile> {
               // Log out the user
               await _auth.signOut();
               // Navigate to the registration page
-              Get.offAll(() => RegistrationPage());
+              Get.offAll(() => LoginPage());
             },
           ),
         ],
