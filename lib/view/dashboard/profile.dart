@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:mobilepraktikum/view/welcome_screen/register_page.dart';
 
+import '../welcome_screen/login_page.dart';
+
 class Profile extends StatefulWidget {
   const Profile({super.key});
 
@@ -30,7 +32,7 @@ class _ProfileState extends State<Profile> {
               // Log out the user
               await _auth.signOut();
               // Navigate to the registration page
-              Get.offAll(() => RegistrationPage());
+              Get.offAll(() => LoginPage());
             },
           ),
         ],
